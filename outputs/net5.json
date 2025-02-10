@@ -1,0 +1,653 @@
+{
+    "nodes": [
+        {
+            "id": 0,
+            "class_id": 9,
+            "name": "Start/End",
+            "bbox": [
+                393,
+                493,
+                139,
+                74
+            ],
+            "center": [
+                462.5,
+                530.0
+            ],
+            "edge_centers": {
+                "top": [
+                    462.5,
+                    493
+                ],
+                "bottom": [
+                    462.5,
+                    567
+                ],
+                "left": [
+                    393,
+                    530.0
+                ],
+                "right": [
+                    532,
+                    530.0
+                ]
+            },
+            "ocr_text": "Fin"
+        },
+        {
+            "id": 1,
+            "class_id": 7,
+            "name": "Process",
+            "bbox": [
+                180,
+                259,
+                189,
+                53
+            ],
+            "center": [
+                274.5,
+                285.5
+            ],
+            "edge_centers": {
+                "top": [
+                    274.5,
+                    259
+                ],
+                "bottom": [
+                    274.5,
+                    312
+                ],
+                "left": [
+                    180,
+                    285.5
+                ],
+                "right": [
+                    369,
+                    285.5
+                ]
+            },
+            "ocr_text": "aux = n % 2"
+        },
+        {
+            "id": 2,
+            "class_id": 4,
+            "name": "Decision",
+            "bbox": [
+                225,
+                337,
+                110,
+                115
+            ],
+            "center": [
+                280.0,
+                394.5
+            ],
+            "edge_centers": {
+                "top": [
+                    280.0,
+                    337
+                ],
+                "bottom": [
+                    280.0,
+                    452
+                ],
+                "left": [
+                    225,
+                    394.5
+                ],
+                "right": [
+                    335,
+                    394.5
+                ]
+            },
+            "ocr_text": "aux==0"
+        },
+        {
+            "id": 3,
+            "class_id": 9,
+            "name": "Start/End",
+            "bbox": [
+                192,
+                11,
+                141,
+                65
+            ],
+            "center": [
+                262.5,
+                43.5
+            ],
+            "edge_centers": {
+                "top": [
+                    262.5,
+                    11
+                ],
+                "bottom": [
+                    262.5,
+                    76
+                ],
+                "left": [
+                    192,
+                    43.5
+                ],
+                "right": [
+                    333,
+                    43.5
+                ]
+            },
+            "ocr_text": "Inicio"
+        },
+        {
+            "id": 4,
+            "class_id": 6,
+            "name": "Output",
+            "bbox": [
+                57,
+                471,
+                188,
+                162
+            ],
+            "center": [
+                151.0,
+                552.0
+            ],
+            "edge_centers": {
+                "top": [
+                    151.0,
+                    471
+                ],
+                "bottom": [
+                    151.0,
+                    633
+                ],
+                "left": [
+                    57,
+                    552.0
+                ],
+                "right": [
+                    245,
+                    552.0
+                ]
+            },
+            "ocr_text": "\"No es par\""
+        },
+        {
+            "id": 5,
+            "class_id": 6,
+            "name": "Output",
+            "bbox": [
+                405,
+                328,
+                152,
+                121
+            ],
+            "center": [
+                481.0,
+                388.5
+            ],
+            "edge_centers": {
+                "top": [
+                    481.0,
+                    328
+                ],
+                "bottom": [
+                    481.0,
+                    449
+                ],
+                "left": [
+                    405,
+                    388.5
+                ],
+                "right": [
+                    557,
+                    388.5
+                ]
+            },
+            "ocr_text": "\"Es par\""
+        },
+        {
+            "id": 6,
+            "class_id": 7,
+            "name": "Process",
+            "bbox": [
+                206,
+                99,
+                115,
+                51
+            ],
+            "center": [
+                263.5,
+                124.5
+            ],
+            "edge_centers": {
+                "top": [
+                    263.5,
+                    99
+                ],
+                "bottom": [
+                    263.5,
+                    150
+                ],
+                "left": [
+                    206,
+                    124.5
+                ],
+                "right": [
+                    321,
+                    124.5
+                ]
+            },
+            "ocr_text": "n"
+        },
+        {
+            "id": 7,
+            "class_id": 8,
+            "name": "Scan (input)",
+            "bbox": [
+                198,
+                180,
+                128,
+                54
+            ],
+            "center": [
+                262.0,
+                207.0
+            ],
+            "edge_centers": {
+                "top": [
+                    262.0,
+                    180
+                ],
+                "bottom": [
+                    262.0,
+                    234
+                ],
+                "left": [
+                    198,
+                    207.0
+                ],
+                "right": [
+                    326,
+                    207.0
+                ]
+            },
+            "ocr_text": "h"
+        }
+    ],
+    "edges": [
+        {
+            "from": 2,
+            "to": 4
+        },
+        {
+            "from": 4,
+            "to": 0
+        },
+        {
+            "from": 1,
+            "to": 2
+        },
+        {
+            "from": 7,
+            "to": 1
+        },
+        {
+            "from": 6,
+            "to": 7
+        },
+        {
+            "from": 5,
+            "to": 0
+        },
+        {
+            "from": 3,
+            "to": 6
+        },
+        {
+            "from": 2,
+            "to": 5
+        }
+    ],
+    "SHAPE_MAP": {
+        "4": "Decision",
+        "5": null,
+        "6": "Output",
+        "7": "Process",
+        "8": "Scan (input)",
+        "9": "Start/End"
+    },
+    "arrows": [
+        {
+            "class_id": 2,
+            "bbox": [
+                329,
+                371,
+                408,
+                393
+            ],
+            "tail_candidate": [
+                329,
+                382.0
+            ],
+            "tip_candidate": [
+                408,
+                382.0
+            ],
+            "tail": {
+                "id": 11,
+                "point": [
+                    335,
+                    394.5
+                ],
+                "type": "shape",
+                "shape_id": 2,
+                "side": "right"
+            },
+            "tip": {
+                "id": 22,
+                "point": [
+                    405,
+                    388.5
+                ],
+                "type": "shape",
+                "shape_id": 5,
+                "side": "left"
+            }
+        },
+        {
+            "class_id": 0,
+            "bbox": [
+                256,
+                71,
+                276,
+                105
+            ],
+            "tail_candidate": [
+                266.0,
+                71
+            ],
+            "tip_candidate": [
+                266.0,
+                105
+            ],
+            "tail": {
+                "id": 13,
+                "point": [
+                    262.5,
+                    76
+                ],
+                "type": "shape",
+                "shape_id": 3,
+                "side": "bottom"
+            },
+            "tip": {
+                "id": 24,
+                "point": [
+                    263.5,
+                    99
+                ],
+                "type": "shape",
+                "shape_id": 6,
+                "side": "top"
+            }
+        },
+        {
+            "class_id": 0,
+            "bbox": [
+                127,
+                390,
+                152,
+                479
+            ],
+            "tail_candidate": [
+                139.5,
+                390
+            ],
+            "tip_candidate": [
+                139.5,
+                479
+            ],
+            "tail": {
+                "id": 32,
+                "point": [
+                    139.5,
+                    390
+                ],
+                "type": "arrow",
+                "shape_id": null,
+                "side": null
+            },
+            "tip": {
+                "id": 16,
+                "point": [
+                    151.0,
+                    471
+                ],
+                "type": "shape",
+                "shape_id": 4,
+                "side": "top"
+            }
+        },
+        {
+            "class_id": 0,
+            "bbox": [
+                258,
+                229,
+                275,
+                262
+            ],
+            "tail_candidate": [
+                266.5,
+                229
+            ],
+            "tip_candidate": [
+                266.5,
+                262
+            ],
+            "tail": {
+                "id": 29,
+                "point": [
+                    262.0,
+                    234
+                ],
+                "type": "shape",
+                "shape_id": 7,
+                "side": "bottom"
+            },
+            "tip": {
+                "id": 4,
+                "point": [
+                    274.5,
+                    259
+                ],
+                "type": "shape",
+                "shape_id": 1,
+                "side": "top"
+            }
+        },
+        {
+            "class_id": 1,
+            "bbox": [
+                135,
+                384,
+                230,
+                405
+            ],
+            "tail_candidate": [
+                230,
+                394.5
+            ],
+            "tip_candidate": [
+                135,
+                394.5
+            ],
+            "tail": {
+                "id": 10,
+                "point": [
+                    225,
+                    394.5
+                ],
+                "type": "shape",
+                "shape_id": 2,
+                "side": "left"
+            },
+            "tip": {
+                "id": 32,
+                "point": [
+                    139.5,
+                    390
+                ],
+                "type": "arrow",
+                "shape_id": null,
+                "side": null
+            }
+        },
+        {
+            "class_id": 0,
+            "bbox": [
+                474,
+                424,
+                495,
+                501
+            ],
+            "tail_candidate": [
+                484.5,
+                424
+            ],
+            "tip_candidate": [
+                484.5,
+                501
+            ],
+            "tail": {
+                "id": 21,
+                "point": [
+                    481.0,
+                    449
+                ],
+                "type": "shape",
+                "shape_id": 5,
+                "side": "bottom"
+            },
+            "tip": {
+                "id": 0,
+                "point": [
+                    462.5,
+                    493
+                ],
+                "type": "shape",
+                "shape_id": 0,
+                "side": "top"
+            }
+        },
+        {
+            "class_id": 0,
+            "bbox": [
+                257,
+                144,
+                276,
+                186
+            ],
+            "tail_candidate": [
+                266.5,
+                144
+            ],
+            "tip_candidate": [
+                266.5,
+                186
+            ],
+            "tail": {
+                "id": 25,
+                "point": [
+                    263.5,
+                    150
+                ],
+                "type": "shape",
+                "shape_id": 6,
+                "side": "bottom"
+            },
+            "tip": {
+                "id": 28,
+                "point": [
+                    262.0,
+                    180
+                ],
+                "type": "shape",
+                "shape_id": 7,
+                "side": "top"
+            }
+        },
+        {
+            "class_id": 0,
+            "bbox": [
+                267,
+                305,
+                284,
+                340
+            ],
+            "tail_candidate": [
+                275.5,
+                305
+            ],
+            "tip_candidate": [
+                275.5,
+                340
+            ],
+            "tail": {
+                "id": 5,
+                "point": [
+                    274.5,
+                    312
+                ],
+                "type": "shape",
+                "shape_id": 1,
+                "side": "bottom"
+            },
+            "tip": {
+                "id": 8,
+                "point": [
+                    280.0,
+                    337
+                ],
+                "type": "shape",
+                "shape_id": 2,
+                "side": "top"
+            }
+        },
+        {
+            "class_id": 2,
+            "bbox": [
+                223,
+                501,
+                396,
+                526
+            ],
+            "tail_candidate": [
+                223,
+                513.5
+            ],
+            "tip_candidate": [
+                396,
+                513.5
+            ],
+            "tail": {
+                "id": 19,
+                "point": [
+                    245,
+                    552.0
+                ],
+                "type": "shape",
+                "shape_id": 4,
+                "side": "right"
+            },
+            "tip": {
+                "id": 2,
+                "point": [
+                    393,
+                    530.0
+                ],
+                "type": "shape",
+                "shape_id": 0,
+                "side": "left"
+            }
+        }
+    ]
+}
