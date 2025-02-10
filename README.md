@@ -2,6 +2,7 @@
 
 This project automates the processing of flowchart images by detecting shapes using a YOLO model, drawing them in a Word document, and extracting handwritten text via the GPT4o. It also generates a JSON representation of the flowchart and an NXN connectivity matrix.
 
+
 ## Features
 
 - **Shape Detection:** Uses a YOLO model to identify various flowchart components (e.g., Process, Decision, Start/End, Output, Input).
@@ -13,6 +14,10 @@ This project automates the processing of flowchart images by detecting shapes us
 ## Examples
 ![Example 1](outputs/output_example.png)
 ![Example 2](outputs/output_example2.png)
+
+## YOLOv11s Detection
+
+![Detection 1](outputs/detection_yolo.jpg)
 ## Requirements
 
 - Python 3.8+
@@ -31,6 +36,4 @@ Dataset : https://universe.roboflow.com/utem-ggh5t/shapes-detection-in-flowchart
 
 
 
-## YOLOv11s Detection
 
-![Detection 1](outputs/detection_yolo.jpg)
